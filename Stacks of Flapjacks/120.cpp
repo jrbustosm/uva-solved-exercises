@@ -40,9 +40,9 @@ int main(){
           pmax = j;
         }
       }
-      if(pmax == v.size()-1){   //case: 4 3 2 1 5 ... max is 5, one flip
+      if(pmax == v.size()-1){   //case: 5 4 3 2 1 ... max is 5, one flip
         flip(v, i+1);
-      }else if(pmax > i){       //case: 4 3 5 1 2 ... max is 5, double flip
+      }else if(pmax > i){       //case: 1 2 5 4 3 ... max is 5, double flip
         flip(v, pmax+1);
         flip(v, i+1);
       }
