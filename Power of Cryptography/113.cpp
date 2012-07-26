@@ -1,3 +1,11 @@
+/* 
+
+Power of Cryptography
+
+Jose Ricardo Bustos Molina
+
+*/
+
 #include <iostream>
 #include <cmath>
 #include <iomanip>
