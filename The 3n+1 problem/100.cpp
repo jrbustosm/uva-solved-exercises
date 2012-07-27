@@ -8,12 +8,11 @@ Jose Ricardo Bustos Molina
 
 #include <iostream>
 
-//Tamaño máximo del cache
+//Maximim size of chache
 #define MAXS 30000001
 
 using namespace std;
 
-//Maximim size of chache
 static int longs[MAXS];
 
 long findlong(long);
