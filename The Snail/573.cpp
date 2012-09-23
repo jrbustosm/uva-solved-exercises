@@ -1,3 +1,11 @@
+/* 
+
+The Snail
+
+Jose Ricardo Bustos Molina
+
+*/
+
 #include <iostream>
 
 using namespace std;
