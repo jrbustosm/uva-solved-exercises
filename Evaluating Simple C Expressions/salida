@@ -1,0 +1,75 @@
+./327.o < input
+Expression: a + b
+    value = 3
+    a = 1
+    b = 2
+Expression: b - z
+    value = -24
+    b = 2
+    z = 26
+Expression: a+b--+c++
+    value = 6
+    a = 1
+    b = 1
+    c = 4
+Expression: c+f--+--a
+    value = 9
+    a = 0
+    c = 3
+    f = 5
+Expression:    f-- + c-- + d-++e
+    value = 7
+    c = 2
+    d = 4
+    e = 6
+    f = 5
+Expression: ++a + ++a
+    value = 6
+    a = 3
+Expression: ++a + ++b + ++c + d++
+    value = 13
+    a = 2
+    b = 3
+    c = 4
+    d = 5
+Expression: a + c++ + c++
+    value = 7
+    a = 1
+    c = 5
+Expression: + + a
+    value = 2
+    a = 2
+Expression: a++ + b
+    value = 3
+    a = 2
+    b = 2
+Expression: a + ++b
+    value = 3
+    a = 2
+    b = 2
+Expression: a++
+    value = 1
+    a = 2
+Expression: ++a
+    value = 2
+    a = 2
+Expression: ++a + --a
+    value = 2
+    a = 1
+Expression: a++ + a--
+    value = 2
+    a = 1
+Expression: a
+    value = 1
+    a = 1
+Expression: c++ + ++c
+    value = 8
+    c = 5
+Expression: a++ + --b + ++a - --b - b-- + c++ + ++c + d + z -w
+    value = 19
+    a = 3
+    b = -1
+    c = 5
+    d = 4
+    w = 23
+    z = 26
