@@ -1,0 +1,61 @@
+/* 
+
+The Broken Pedometer
+
+Jose Ricardo Bustos Molina
+
+*/
+
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <climits>
+#include <queue>
+#include <algorithm>
+
+using namespace std;
+
+int check(vector<string> v);
+int check(vector<string> v, int i, queue<int> &p);
+
+int main(){
+  int T;
+  cin >> T;
+  while(T--){
+    int P, N;
+    cin >> P >> N;
+    vector<string> v;
+    for(int i=0; i<N; ++i){
+      ostringstream oss;
+      for(int j=0; j<P; ++j){
+        char c;
+        cin >> c;
+        oss << c;
+      }
+      v.push_back(oss.str());
+    }
+    cout << check(v) << endl;
+  }
+}
+
+int check(vector<string> v){
+  queue<int> p;
+  for(int j=0; j<v[0].size(); ++j) p.push(j);
+  return v[0].size()-check(v, -1, p);
+}
+
+int check(vector<string> v, int i, queue<int> &p){
+  if(i>=0) for(int k=0; k<v.size(); ++k) v[k][i] = '0';
+  sort(v.begin(), v.end());
+  for(int k=1; k<v.size(); ++k) if(v[k-1]==v[k]) return -1;
+  int max = 0;
+  for(int k=0; k<p.size(); ++k){
+    int h = p.front();
+    p.pop();
+    int r = 1+check(v, h, p);
+    if(r > max) max = r;
+    p.push(h);
+  }
+  return max;
+}
+
