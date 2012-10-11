@@ -1,0 +1,53 @@
+/* 
+
+Generating Fast, Sorted Permutation
+
+Jose Ricardo Bustos Molina
+
+*/
+
+#include <iostream>
+#include <stdio.h>
+#include <vector>
+#include <map>
+#include <sstream>
+
+using namespace std;
+
+void comb(vector<char> &v, vector<char> &l, map<string, bool> &m, int s);
+
+int main(){
+  int N;
+  cin >> N;
+  cin.get();
+  for(int n=0; n<N; ++n){
+    char line[11];
+    scanf("%s", line);
+    vector<char> v;
+    int i=0;
+    while(line[i]!='\0') v.push_back(line[i++]);
+    map<string, bool> m;
+    vector<char> aux;
+    comb(v, aux, m, v.size());
+    if(n>0) cout << endl;
+    for(map<string, bool>::iterator it=m.begin(); it!=m.end(); ++it) cout << (*it).first << endl;
+  }
+}
+
+void comb(vector<char> &v, vector<char> &l, map<string, bool> &m, int s){
+  if(l.size() == s){
+    ostringstream oss;
+    for(vector<char>::iterator it=l.begin(); it!=l.end(); ++it) oss << (*it);
+    m[oss.str()] = true;
+    return;
+  }
+  for(int i=0; i<v.size(); ++i){
+    char c = v[i];
+    v.erase(v.begin()+i);
+    l.push_back(c);
+    comb(v, l, m, s);
+    l.erase(l.end()-1);
+    v.insert(v.begin()+i, c);
+  }
+}
+
