@@ -1,0 +1,58 @@
+/* 
+
+Multiplying by Rotation
+
+Jose Ricardo Bustos Molina
+
+*/
+
+#include <iostream>
+#include <cmath>
+#include <map>
+
+using namespace std;
+
+char NUMS[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Characters that may be used
+map<char,int> mNUMS;
+
+string conv(int decimal, int base);
+int convB(string n, int base);
+
+int main(){
+  for(int i=0; i<=36; ++i) mNUMS[NUMS[i]] = i;
+  int b, l, m;
+  string ls, ms;
+  while(cin >> b >> ls >> ms){
+    l=(ls.size()==1)?mNUMS[ls[0]]:convB(ls, 10);
+    m=(ms.size()==1)?mNUMS[ms[0]]:convB(ms, 10);
+    string A, B;
+    do{
+      A = conv(l,b);
+      B = conv(l*m,b);
+      //cout << A << " " << B << endl;
+      l += b;  
+    }while(!(A.size()==B.size() && A[A.size()-1]==B[0] && A.substr(0,A.size()-1)==B.substr(1,B.size()-1)));
+    cout << ":" << A.size() << endl;
+  }
+}
+
+string conv(int decimal, int base){
+  //Freaky_Chris
+  if(decimal == 0) return "0";
+  string result = ""; // Create empty string ready for data to be appended
+  do{
+    result.push_back(NUMS[decimal%base]);
+    decimal /= base; // Calculate new value of decimal
+  }while(decimal != 0); // Do while used for slight optimisation
+  return string(result.rbegin(), result.rend());
+  // using std::string() constructer with iterators to reverse the string
+}
+
+int convB(string n, int base){
+  int d = 0;
+  for(string::iterator it=n.end()-1; it>=n.begin(); --it){
+    d += pow(base, (n.end()-1)-it) * mNUMS[*it];
+  }
+  return d;
+}
+
