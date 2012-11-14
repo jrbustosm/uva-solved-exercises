@@ -1,0 +1,64 @@
+/* 
+
+Interval Products
+
+Jose Ricardo Bustos Molina
+
+*/
+
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main(){
+  ostringstream oss;
+  int N, K;
+  while(cin >> N >> K){
+    int* e = new int[N];
+    int* v = new int[N+1];
+    int* z = new int[N+1];
+    int h = 0;
+    int g = 0;
+    v[0] = 0;
+    z[0] = 0;
+    for(int i=1; i<=N; ++i){
+      int aux;
+      cin >> aux;
+      if(aux<0) ++h;
+      else if(aux==0) ++g;
+      v[i] = h;
+      z[i] = g;
+      e[i-1] = aux;
+    }
+    for(int k=0; k<K; ++k){
+      char c;
+      int a, b;
+      cin >> c >> a >> b;
+      if(c=='C'){
+        if(b<0 && e[a-1]>=0){
+          for(int i=a; i<=N; ++i) ++v[i];
+        }else if(b>=0 && e[a-1]<0){
+          for(int i=a; i<=N; ++i) --v[i];
+        }
+
+        if(b==0 && e[a-1]!=0){
+          for(int i=a; i<=N; ++i) ++z[i];
+        }else if(e[a-1]==0 && b!=0){
+          for(int i=a; i<=N; ++i) --z[i];
+        }
+        e[a-1] = b;
+      }
+      else{
+        if(z[a-1] != z[b]) oss << 0;
+        else{
+          if((v[b]-v[a-1])%2==0) oss << "+";
+          else oss << "-";
+        }
+      }
+    }
+    oss << endl;
+  }
+  cout << oss.str();
+}
+
