@@ -25,7 +25,6 @@ int main(){
   int N, K;
   while(scanf("%d %d",&N,&K) != EOF){
     int T = (int)(sqrt(N));
-    if(T<5) T = 5;
     int h = 0;
     int g = 0;
     v[0] = 0;
@@ -72,8 +71,7 @@ int count(int *v, int l, int r, int T){
 }
 
 int count(int *v, int x, int T){
-  if(x%T==0) return v[x];
-  else return v[x]+v[x/T*T];
+  return v[x] + (x%T==0?0:v[x/T*T]);
 }
 
 void update(int *v, int a, int d, int N, int T){
