@@ -1,0 +1,114 @@
+ACM  InterNaTional Collegiate Programming Contest (abbreviated as ACM-ICPC or just "ICPC")
+is an annual multi-tiered computer programming competition among the universities of the 
+world. The contest is sponsored by IBM. Headquartered at Baylor University, with autonomous 
+regions on six continents, the ICPC is directed by Baylor Professor William B. Poucher, 
+Executive Director, and operates under the auspices of the Association for Computing 
+Machinery (ACM).
+
+History
+The ACM International Collegiate Programming Contest, ICPC, traces its roots to a competition held at Texas A&M 
+University in 1970 hosted by the Alpha Chapter of the Upsilon Pi Epsilon Computer Science Honor Society (UPE). 
+The contest evolved into its present form as a multi-tier competition in 1977, with the first finals held in 
+conjunction with the ACM Computer Science Conference.
+
+From 1977 to 1989, the contest included mainly teams from U.S. and Canada. Headquartered at Baylor University 
+since 1989, with regionals established within the world's university community, operating under the auspices 
+of ACM, and with substantial industry support, the ICPC has grown into a worldwide competition with teams 
+from 84 countries in 2005.
+
+Since the beginning of IBM's sponsorship in 1997, contest participation has grown enormously. In 1997, 840 teams 
+from 560 universities participated. In 2007, 6,700 teams from 1,821 universities participated. The number of 
+teams keeps increasing by 10-20% every year and future competitions may be even larger.
+
+The World Finals of the ACM International Collegiate Programming Contest World Finals, ACM-ICPC World Finals, 
+is the final round of competition. Over its history it has become a 4-day event held in the finest venues 
+worldwide. UPE recognizes all of the regional champions at the event. Recent World Champion teams have been 
+recognized by their country's head of state and at the annual ACM Awards Ceremony.
+
+Contest rules
+The ICPC is a team competition. Current rules stipulate that each team consist of three students. Participants 
+must be university students, who have had less than five years of university education before the contest. 
+Students who have previously competed in two World Finals or five regional competitions are ineligible to 
+compete again.[1][2]
+
+During contest, the teams are given 5 hours to solve between 8 and 12 programming problems (with 8 typical for 
+regionals and 10 for finals). They must submit solutions as programs in C, C++, or Java. Programs are then run 
+on test data. If a program fails to give a correct answer, the team is notified about that and they can submit 
+another program.
+
+The winner is the team which correctly solves most problems. If necessary to rank teams for medals or prizes 
+among tying teams, the placement of teams is determined by the sum of the elapsed times at each point that they 
+submitted correct solutions plus 20 minutes for each rejected submission of a problem ultimately solved.
+
+For example, consider a situation when two teams, Red and Blue, tie by solving two problems each. The team Red 
+submitted their solutions to A and B at 1:00 and 2:45 after the beginning of the contest. They had a rejected 
+run on C, but it was ignored since they didn't solve C. The team Blue submitted solutions to problems A and C 
+at 1:20 and 2:00 after the beginning. They had one rejected run on C. Then, the total time is 1:00+2:45=3:45 
+for team Red and 1:20+2:00+0:20=3:40 for team Blue. The tie is broken in favor of Team Blue.
+
+Compared to other programming contests (for example, International-Olympiad in Informatics), the ICPC is
+characterized by a large number of problems (8 or more problems in just 5 hours). Another feature is that each 
+team can use only one computer, although teams have three students. This makes the time pressure even greater.
+Good teamwork and ability to withstand pressure is needed to win.
+
+Regionals and World Finals
+The contest consists of several stages. Many universities hold local contests to determine participants at the
+regional level. Then, universities compete in Regional contests. Winners of Regional contests advance to the 
+ACM-ICPC World Finals. More than one team from a university can compete in regionals, but only one may compete
+at the world finals. From each region, at least one team goes to World Finals. Regions with large number of teams send multiple teams to finals (sometimes as many as 6 teams from one very large region).
+
+No participant can take part in more than two World Finals.
+
+Some large regions also hold Subregional competitions (also called Preliminaries) which are intermediate between 
+local and regional contests. In ACM/ICPC, the result has seven different expressions (AC, WA, RTE, TLE, PE, MLE,
+CE).The result AC means the code is accepted by the system.
+
+2004 World Finals
+The 2004 ACM-ICPC World Finals were hosted at the Obecni Dum, Prague, by Czech Technical University in Prague. 
+3,150 teams representing 1,411 universities from 75 countries competed in elimination rounds, with 73 of those teams proceeding to the world finals. St. Petersburg Institute of Fine Mechanics and Optics from Russia won, solving 7 of 10 problems.[3] Gold medalists were St. Petersburg Institute of Fine Mechanics and Optics, KTH - Royal Institute of Technology (Sweden), Belarusian State University, and Perm State University (Russia).
+
+2005 World Finals
+ 
+Opening Ceremony in 2005.The 2005 world finals were held at Pudong Shangri-La Hotel in Shanghai on April 6, 2005, 
+hosted by Shanghai Jiaotong University. 4,109 teams representing 1,582 universities from 71 countries competed 
+in elimination rounds, with 78 of those teams proceeding to the world finals. Shanghai Jiaotong University won 
+its second world title, with 8 of 10 problems solved. [1] Gold medal winners were Shanghai Jiaotong, Moscow State
+University, St. Petersburg Institute of Fine Mechanics and Optics (Russia), and University of Waterloo (Canada).
+
+2006 World Finals
+The 2006 ACM-ICPC World Finals were held in San Antonio, Texas, and hosted by Baylor University.[4] 5,606 teams 
+representing 1,733 universities from 84 countries competed in elimination rounds, with 83 of those teams 
+proceeding to the world finals. Saratov State University from Russia won, solving 6 of 10 problems.[5] Gold medal
+winners were Saratov, Jagiellonian University (Poland), Altai State Technical University (Russia), University of 
+Twente (The Netherlands).
+
+2007 World Finals
+The 2007 ACM-ICPC World Finals were held at the Tokyo Bay Hilton, in Tokyo, Japan, March 12-16, 2007. The World 
+Finals was hosted by the ACM Japan Chapter and the IBM Tokyo Research Lab. Some 6,099 teams competed on six 
+continents at the regional level. Eighty-eight teams advanced to the World Finals. Warsaw University won its 
+second world championship, solving 8 of 10 problems. Gold Medal Winners were Warsaw University, Tsinghua 
+University (China), St. Petersburg Institute of Fine Mechanics and Optics (Russia), and the Massachusetts 
+Institute of Technology (United States).
+
+2008 World Finals
+The 2008 ACM-ICPC World Finals were held at the Fairmont Banff Springs Hotel, in Banff, Alberta, Canada,
+April 6-10, 2008.[6] The World Finals was hosted by the University of Alberta. There were 100 teams in the World 
+finals, out of 6700 total teams competing in the earlier rounds.[7] The St. Petersburg Institute of Fine 
+Mechanics and Optics won their second world championship. Massachusetts Institute of Technology, Izhevsk State
+Technical University, and Lviv National University also received gold medals.
+
+2009 World Finals
+The 2009 ACM-ICPC World Finals were held in Stockholm, Sweden, April 18-22, at the Grand Hotel of Sweden, the
+Radisson Strand, and the Diplomat Hotel. The World Finals was hosted by KTH - The Royal Institute of Technology.
+There were 100 teams from over 200 regional sites to competing for the World Championship. The St. Petersburg 
+Institute of Fine Mechanics and Optics defended their championship title to win their third world championship. 
+Tsinghua University, St. Petersburg State University, and Saratov State University also received gold medals.[8]
+
+2010 World Finals
+The 2010 ACM-ICPC World Finals were held in Harbin, China. The host is Harbin Engineering University.[9] 
+Shanghai Jiaotong University won its third world title, with 7 of 11 problems solved. Moscow State University, 
+National Taiwan University, and Taras Shevchenko Kiev National University also received gold medals.
+
+"The-ACM-ICPC-Asia-Hatyai-Regional-Programming-Contest 2012" is held during 15-16
+November 2012. It is hosted by Prince of Songkla University, Hatyai campus, Thailand. E-N-D
+
