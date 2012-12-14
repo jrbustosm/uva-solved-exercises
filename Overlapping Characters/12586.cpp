@@ -42,7 +42,10 @@ int main(){
           }
         }
       }
-      if(o[j]!='.') r[o[j]] = true;
+      if(o[j]!='.'){
+        r[o[j]] = true;
+        if(r.size()==sq.size()) break;
+      }
     }
     for(string::iterator c=sq.begin(); c!=sq.end(); ++c) cout << (r.find(*c)!=r.end()?"Y":"N");
     cout << endl;
