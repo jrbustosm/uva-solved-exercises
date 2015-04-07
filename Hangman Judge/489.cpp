@@ -1,7 +1,5 @@
 /* 
 
-the 3n+1 problem
-
 Jose Ricardo Bustos Molina
 
 */
